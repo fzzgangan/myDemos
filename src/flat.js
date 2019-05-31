@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<script>
 var isArray = Array.isArray
-function flat(arr) {
+export function flat(arr) {
 	var tmp = [];
 	arr.forEach((i,a)=>{
 		if(isArray(i)){
@@ -23,12 +16,3 @@ function flat(arr) {
 	})
 	return tmp;
 }
-var array = [1, 2, [3, [4, [5]]],9];
-var array = [1, 2, [3]];
-var array = [1, 2, [3, [4, []]],9,[4,[6]],[[2]]];
-console.log(flat(array));
-
-</script>
-
-</body>
-</html>
